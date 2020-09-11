@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: "Fira Mono", monospace, serif;
+  font-size: 18px;
+  background-color: #19232d;
+  padding-inline-start: 0;
+  color: white;
+  overflow: auto;
+}
+header {
+  display: inline;
+}
+nav {
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+nav a{
+  font-size: 18px;
+}
+nav a.active {
+  background-color: #6772e5;
+}
+nav .icon {
+  display: none;
+}
+nav li {
+  list-style-type: none;
+  margin: 15px auto;
+  text-align: center;
+  padding-right: 10px;
+}
+.navToggle {
+  position: absolute;
+  top: 26px;
+  right: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.mainNav{
+  display: none;
+}
+.active {
+  display: block;
+}
+.siteLogo {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  .mainNav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .navLink {
+    margin-left: 40px;
+  }
+  .siteLogo {
+    margin-top: 0;
+  }
+  .navToggle {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #6772e5;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+body {
+  margin-top: 130px;
+  padding: 5px;
+}
+.img {
+  display: block;
+  width: 350px;
+  margin: 20px auto;
+}
+.border {
+  border: 10px solid white;
+  border-radius: 25px;
+}
+.shadow {
+  box-shadow: 25px 25px #6772e5;
+}
+.shadow-2 {
+  box-shadow: 25px 25px white;
+}
+.logo {
+  width: 80px;
+}
+.logo-2 {
+  width: 48px;
+}
+.flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-child {
+  flex-basis: 33.33%;
+}
+.flex-child-2 {
+  flex-basis: 50%;
+  align-items: center;
+}
+.flex-parent > div {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .flex-child,
+  .flex-child-2 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  body {
+    margin-top: 130px;
+  }
+  .img {
+    width: 250px;
+    margin: 25px auto;
+  }
+  .content,
+  .content-2 {
+    padding: 40px !important;
+  }
+  .right {
+    float: right;
+  }
+}
+.center {
+  text-align: center;
+}
+button {
+  border: 3px solid white;
+  background-color: yellow;
+  padding: 15px;
+  margin: 15px;
+}
+.content {
+  background-color: #6772e5;
+  padding: 75px;
+  margin: 50px 0;
+}
+.content-2 {
+  background-color: tomato;
+  padding: 75px;
+  margin: 50px 0;
+}
+div aside,
+div article,
+div h2,
+div h3,
+div p,
+div button,
+div a {
+  background-color: inherit;
+}
+hr {
+  margin: 35px;
+  justify-content: center;
+}
+footer div {
+  padding: 0 10px;
+  justify-content: center;
+}
+strong {
+  padding: 0 10px;
+}
+.sideBar{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sideBar a,
+.sideBar p,
+.sideBar img,
+.sideBar h4 {
+  padding: 8px 8px 8px 32px;
+  display: block;
+  transition: 0.3s;
+}
+.sideBar .closeButton {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 55px;
+  margin-left: 50px;
+  justify-content: center;
+}
+@media screen and (max-height: 450px) {
+  .sideBar {
+    padding-top: 15px;
+  }
+}
+.profile {
+  margin: auto 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+}
+.skillContainer{
+  width: 100%;
+}
+.skillBar {
+  text-align: right;
+  padding: 5px auto;
+}
+.lion {
+  width: 80%;
+  background-color: #6772e5;
+  border-right: 15px solid #6772e5;
+}
+.support,
+.html {
+  width: 65%;
+  background-color: #6772e5;
+  border-right: 15px solid #6772e5;
+}
+.css {
+  width: 35%;
+  background-color: #6772e5;
+  border-right: 15px solid #6772e5;
+}
+.js {
+  width: 15%;
+  background-color: #6772e5;
+  border-right: 15px solid #6772e5;
+}
