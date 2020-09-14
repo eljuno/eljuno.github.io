@@ -245,19 +245,23 @@ strong {
   background-color: #6772e5;
   border-right: 15px solid #6772e5;
 }
-.support,
-.html {
+.support {
   width: 65%;
   background-color: #6772e5;
   border-right: 15px solid #6772e5;
 }
-.css {
-  width: 35%;
+.dotwork {
+  width: 85%;
   background-color: #6772e5;
   border-right: 15px solid #6772e5;
 }
-.js {
-  width: 15%;
+.sketch {
+  width: 75%;
+  background-color: #6772e5;
+  border-right: 15px solid #6772e5;
+}
+.digital {
+  width: 40%;
   background-color: #6772e5;
   border-right: 15px solid #6772e5;
 }
