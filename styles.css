@@ -154,15 +154,6 @@ button {
   padding: 25px;
   margin: 25px;
 }
-div aside,
-div article,
-div h2,
-div h3,
-div p,
-div button,
-div a {
-  background-color: inherit;
-}
 article {
   padding: 35px;
 }
